@@ -26,3 +26,9 @@ fall2017 %>% semi_join(s, by = 'ID') # add to pipeline here
 
 # Census for non badminton people
 fall2017 %>% anti_join(s, by = 'ID') # add to pipeline here
+
+
+## Troubleshooting joins
+
+# you can use pipes to look at results of join prior to creating dataframe in your workspace
+fall2017 %>% left_join(s, by = 'ID') %>% count(sport) # did join behave as expected?
