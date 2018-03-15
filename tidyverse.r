@@ -19,7 +19,7 @@ fall2017 <- fall2017 %>%
 
 ## Filtering joins can be very helpful
 
-s <- read_csv('sports-roster.csv') %>% 
+s <- read_csv('sports-roster.csv')
 
 # Census for only those who participated in badminton
 fall2017 %>% semi_join(s, by = 'ID') # add to pipeline here
