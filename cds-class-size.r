@@ -1,4 +1,5 @@
 # Use this to create class section size bands for the Common Data Set
+# This is the Base approach, look at forcats
 
 df$SizeBand[df$ENROLLMENT<=9] <- '2-9' 
 df$SizeBand[df$ENROLLMENT>=10 & df$ENROLLMENT<=19] <- '10-19'
