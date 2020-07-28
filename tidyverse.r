@@ -2,7 +2,7 @@
 ## Some tidyverse efficiencies
 ##
 
-require('tidyverse')
+library('tidyverse')
 
 ## Use list of IDs from a roster-type file to create variable in census
 
@@ -22,13 +22,17 @@ fall2017 <- fall2017 %>%
 s <- read_csv('sports-roster.csv')
 
 # Census for only those who participated in badminton
-fall2017 %>% semi_join(s, by = 'ID') # add to pipeline here
+fall2017 %>% 
+  semi_join(s, by = 'ID') # add to pipeline here
 
 # Census for non badminton people
-fall2017 %>% anti_join(s, by = 'ID') # add to pipeline here
+fall2017 %>% 
+  anti_join(s, by = 'ID') # add to pipeline here
 
 
 ## Troubleshooting joins
 
 # you can use pipes to look at results of join prior to creating dataframe in your workspace
-fall2017 %>% left_join(s, by = 'ID') %>% count(sport) # did join behave as expected?
+fall2017 %>% 
+  left_join(s, by = 'ID') %>% 
+  count(sport) # did join behave as expected?
