@@ -16,4 +16,5 @@ Code snippets for common Institutional Research in HigherEd tasks
       * flattening nested data       
 
 Create sample data using Faker in python:
+
 https://faker.readthedocs.io/en/master/

@@ -3,7 +3,7 @@
 Start with repeating rows data extract from Banner or other enterprise database
 
 ```r
-require('tidyverse')
+library('tidyverse')
 
 df <- read_csv('student-courses.csv')
 
@@ -25,5 +25,6 @@ df$FinalGrade <- factor(df$FinalGrade, levels = c()) # specify the correct order
 gd <- as.data.frame.matrix(table(df$Course, df$FinalGrade))
 
 # output to csv
-write_csv(gd, 'grade-dist.csv')
+gd %>% 
+  write_csv('grade-dist.csv', na = '')
 ```
