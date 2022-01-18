@@ -1,8 +1,21 @@
-## 
-## Some tidyverse efficiencies
-##
+
+# 
+#  Using the Tidyverse with Higher Ed Data
+#
+#
+#  TO DO : 
+#  - Add example data
+#  - Add to sections below
+#  
+#
+
 
 library('tidyverse')
+
+
+
+### Joins & Lookups
+
 
 ## Use list of IDs from a roster-type file to create variable in census
 
@@ -36,3 +49,25 @@ fall2017 %>%
 fall2017 %>% 
   left_join(s, by = 'ID') %>% 
   count(sport) # did join behave as expected?
+
+
+
+### tidyr
+
+
+## pivot_longer
+## pivot_wider
+## separate
+## separate_rows - xlist courses example
+
+
+
+### dplyr
+
+## case_when
+## if_else - recoding with NAs
+## across - rowSums with rm.na = TRUE
+
+
+
+
