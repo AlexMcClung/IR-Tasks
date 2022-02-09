@@ -15,6 +15,5 @@ Code snippets for common Institutional Research in HigherEd tasks
       * wide to long, long to wide restructing  
       * flattening nested data       
 
-Create sample data using Faker in python:
-
-https://faker.readthedocs.io/en/master/
+* Create sample data using Faker in python:
+   https://faker.readthedocs.io/en/master/
