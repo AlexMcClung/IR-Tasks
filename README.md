@@ -4,7 +4,7 @@ Code snippets for common "data wrangling" tasks in Institutional Research in Hig
 
 Tasks categorized by types of higher ed data files:  
 
-- grade file  
+- grades file ([grade distribution](grade-distribution.qmd))  
 
 - course file  
 
