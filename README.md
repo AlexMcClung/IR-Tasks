@@ -1,6 +1,6 @@
 # IR Tasks  
 
-Code snippets for common Institutional Research in Higher Ed "data wrangling" tasks  
+Code snippets for common "data wrangling" tasks in Institutional Research in Higher Ed  
 
 Tasks categorized by types of higher ed data files:  
 
@@ -24,4 +24,3 @@ Tasks categorized by goal:
 - data restructuring : wide to long, long to wide     
 
 - flattening nested data       
-

@@ -1,0 +1,48 @@
+---
+title: "Creating a Grade Distribution"
+format: html
+self-contained: true
+---
+
+Start with repeating rows data extract from Banner or other enterprise database
+
+```{r}
+library('tidyverse')
+
+df <- tribble(
+  ~Student, ~Subject, ~CourseNumber, ~FinalGrade,
+  1,'BIOL',101,'C-',
+  1,'MATH',101,'B-',
+  2,'ENGL',201,'B+',
+  2,'SPAN',201,'A-',
+  2,'BIOL',201,'A-',
+  3,'SPAN',201,'A-',
+  3,'BIOL',101,'A',
+  1,'HIST',210,'B',
+)
+
+df
+
+```
+
+
+Base R Solution  
+
+```{r}
+df$Course <- paste(df$Subject, df$CourseNumber)
+
+# df$FinalGrade <- ifelse(df$FinalGrade %in% c(), 'A', df$FinalGrade) # example for recoding any errant values
+# df$FinalGrade <- factor(df$FinalGrade, levels = c()) # specify the correct order of grades
+
+# produce the grade distribution
+gd <- as.data.frame.matrix(table(df$Course, df$FinalGrade))
+
+gd
+```
+
+
+```{r eval=FALSE}
+# output to csv
+gd %>% 
+  write_csv('grade-dist.csv', na = '')
+```
