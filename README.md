@@ -1,10 +1,10 @@
 # IR Data Wrangling Tasks  
 
-### Code snippets for common "data wrangling" tasks in Institutional Research in Higher Ed  
+Code snippets for common "data wrangling" tasks in Institutional Research in Higher Ed  
 
 These snippets are made available here as Jupyter notebooks (.ipynb) so that the code and output can be displayed in Github. Note that most of the snippets here are written in R so an R kernel is needed to run these notebooks.     
 
-### Tasks categorized by type of higher ed data file:  
+Tasks categorized by type of higher ed data file:  
 
 - grades file ([grade distribution](grade-distribution.ipynb))  
 
@@ -21,7 +21,7 @@ These snippets are made available here as Jupyter notebooks (.ipynb) so that the
 - admissions data  
 
     
-### Tasks categorized by goal:  
+Tasks categorized by goal:  
 
 - data restructuring : wide to long, long to wide     
 
