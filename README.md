@@ -1,25 +1,27 @@
-# IR Tasks  
+# IR Data Wrangling Tasks  
 
-Code snippets for common "data wrangling" tasks in Institutional Research in Higher Ed  
+### Code snippets for common "data wrangling" tasks in Institutional Research in Higher Ed  
 
-Tasks categorized by types of higher ed data files:  
+These snippets are made available here as Jupyter notebooks (.ipynb) so that the code and output can be displayed in Github. Note that most of the snippets here are written in R so an R kernel is needed to run these notebooks.     
 
-- grades file ([grade distribution](grade-distribution.qmd))  
+### Tasks categorized by type of higher ed data file:  
 
-- course file  
+- grades file ([grade distribution](grade-distribution.ipynb))  
 
-- enrollment data  
+- course file ([CDS class sizes](cds-class-size.ipynb))  
 
-- degree data
+- enrollment data ([demographics recodes](demographics-recodes.ipynb))  
 
-- faculty-staff census
+- degree data  
 
-- financial aid data
+- faculty-staff census ([simulate employee data](fake-employee-data.ipynb))  
+
+- financial aid data  
 
 - admissions data  
 
     
-Tasks categorized by goal:  
+### Tasks categorized by goal:  
 
 - data restructuring : wide to long, long to wide     
 
