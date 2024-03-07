@@ -23,6 +23,6 @@ Tasks categorized by type of higher ed data file:
     
 Tasks categorized by goal:  
 
-- data restructuring : wide to long ([IPEDS Admissions](ipeds-restructuring-example.ipynb)), long to wide     
+- data restructuring : wide to long, long to wide ([IPEDS Admissions](ipeds-restructuring-example.ipynb))       
 
 - flattening nested data       
